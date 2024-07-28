@@ -1,0 +1,66 @@
+<circuit type="simulide_0.1">
+ 
+Probe-27: 
+<item valLabRot="45" x="-516" y="-316" vflip="1" valLabelx="16" Show_volt="true" hflip="1" itemtype="Probe" id="Probe-27" rotation="-45" valLabely="0" labely="-16" objectName="Probe-27" Show_id="false" labelx="16" labelrot="45"/>
+ 
+Probe-26: 
+<item valLabRot="45" x="-556" y="-348" vflip="1" valLabelx="16" Show_volt="true" hflip="1" itemtype="Probe" id="Probe-26" rotation="-45" valLabely="0" labely="-16" objectName="Probe-26" Show_id="false" labelx="16" labelrot="45"/>
+ 
+attiny13-9: 
+<item valLabRot="0" x="-476" y="-324" vflip="1" valLabelx="0" hflip="1" Mhz="16" itemtype="AVR" id="attiny13-9" program="light-switch.elf" rotation="0" valLabely="0" labely="-20" objectName="attiny13-9" Show_id="true" labelx="0" labelrot="0"/>
+ 
+Fixed Volt.-8: 
+<item objectName="Fixed Volt.-8" vflip="1" itemtype="Fixed Voltage" id="Fixed Volt.-8" labelrot="0" valLabely="8" x="-388" labely="-24" Show_id="false" Voltage="5" rotation="0" valLabRot="0" y="-316" Unit=" V" labelx="-64" valLabelx="-16" Show_Volt="true" hflip="-1"/>
+ 
+Ground (0 V)-7: 
+<item valLabRot="0" x="-516" y="-268" vflip="1" valLabelx="0" hflip="1" itemtype="Ground" id="Ground (0 V)-7" rotation="0" valLabely="0" labely="-24" objectName="Ground (0 V)-7" Show_id="false" labelx="-16" labelrot="0"/>
+ 
+Resistor-6: 
+<item Resistance="220" objectName="Resistor-6" vflip="1" itemtype="Resistor" id="Resistor-6" labelrot="0" valLabely="6" x="-556" labely="-24" Show_id="false" Show_res="true" rotation="0" valLabRot="0" y="-300" Unit=" Ω" labelx="-12" valLabelx="-16" hflip="1"/>
+ 
+Led-5: 
+<item objectName="Led-5" Resistance="0.6" vflip="1" itemtype="Led" id="Led-5" labelrot="0" valLabely="0" x="-564" labely="-24" Show_id="false" rotation="0" valLabRot="0" y="-236" threshold="2.4" MaxCurrent="0.03" Grounded="false" labelx="-16" valLabelx="0" hflip="1" Color="0"/>
+ 
+Ground (0 V)-4: 
+<item valLabRot="0" x="-516" y="-204" vflip="1" valLabelx="0" hflip="1" itemtype="Ground" id="Ground (0 V)-4" rotation="0" valLabely="0" labely="-24" objectName="Ground (0 V)-4" Show_id="false" labelx="-16" labelrot="0"/>
+ 
+Toggle Switch-3: 
+<item valLabRot="0" x="-532" y="-380" vflip="1" valLabelx="0" hflip="1" itemtype="ToggleSwitch" id="Toggle Switch-3" rotation="0" valLabely="0" labely="-24" objectName="Toggle Switch-3" Show_id="false" labelx="-16" labelrot="0"/>
+ 
+Node-2: 
+<item valLabRot="0" x="-412" y="-316" vflip="1" valLabelx="0" hflip="1" itemtype="Node" id="Node-2" rotation="0" valLabely="0" labely="-24" objectName="Node-2" Show_id="false" labelx="-16" labelrot="0"/>
+ 
+Node-1: 
+<item valLabRot="0" x="-500" y="-292" vflip="1" valLabelx="0" hflip="1" itemtype="Node" id="Node-1" rotation="0" valLabely="0" labely="-24" objectName="Node-1" Show_id="false" labelx="-16" labelrot="0"/>
+ 
+Connector-10: 
+<item startpinid="attiny13-9-VCC" enodeid="Circ_eNode-11" objectName="Connector-10" vflip="1" itemtype="Connector" id="Connector-10" labelrot="0" valLabely="0" x="-436" labely="-24" Show_id="false" rotation="0" pointList="-436,-316,-412,-316" valLabRot="0" y="-316" labelx="-16" endpinid="Node-2-0" valLabelx="0" hflip="1"/>
+ 
+Connector-12: 
+<item startpinid="attiny13-9-GND" enodeid="Circ_eNode-13" objectName="Connector-12" vflip="1" itemtype="Connector" id="Connector-12" labelrot="0" valLabely="0" x="-484" labely="-24" Show_id="false" rotation="0" pointList="-484,-292,-500,-292" valLabRot="0" y="-292" labelx="-16" endpinid="Node-1-0" valLabelx="0" hflip="1"/>
+ 
+Connector-14: 
+<item startpinid="Resistor-6-rPin" enodeid="Circ_eNode-15" objectName="Connector-14" vflip="1" itemtype="Connector" id="Connector-14" labelrot="0" valLabely="0" x="-540" labely="-24" Show_id="false" rotation="0" pointList="-540,-300,-484,-300" valLabRot="0" y="-300" labelx="-16" endpinid="attiny13-9-PB4" valLabelx="0" hflip="1"/>
+ 
+Connector-16: 
+<item startpinid="Resistor-6-lPin" enodeid="Circ_eNode-17" objectName="Connector-16" vflip="1" itemtype="Connector" id="Connector-16" labelrot="0" valLabely="0" x="-572" labely="-24" Show_id="false" rotation="0" pointList="-572,-300,-596,-300,-596,-236,-580,-236" valLabRot="0" y="-300" labelx="-16" endpinid="Led-5-lPin" valLabelx="0" hflip="1"/>
+ 
+Connector-18: 
+<item startpinid="Led-5-rPin" enodeid="Circ_eNode-19" objectName="Connector-18" vflip="1" itemtype="Connector" id="Connector-18" labelrot="0" valLabely="0" x="-548" labely="-24" Show_id="false" rotation="0" pointList="-548,-236,-516,-236,-516,-220" valLabRot="0" y="-236" labelx="-16" endpinid="Ground (0 V)-4-Gnd" valLabelx="0" hflip="1"/>
+ 
+Connector-20: 
+<item startpinid="attiny13-9-PB3" enodeid="Circ_eNode-21" objectName="Connector-20" vflip="1" itemtype="Connector" id="Connector-20" labelrot="0" valLabely="0" x="-484" labely="-24" Show_id="false" rotation="0" pointList="-484,-308,-572,-308,-572,-380,-548,-380" valLabRot="0" y="-308" labelx="-16" endpinid="Toggle Switch-3-lpin0" valLabelx="0" hflip="1"/>
+ 
+Connector-22: 
+<item startpinid="Toggle Switch-3-rpin1" enodeid="Circ_eNode-11" objectName="Connector-22" vflip="1" itemtype="Connector" id="Connector-22" labelrot="0" valLabely="0" x="-516" labely="-24" Show_id="false" rotation="0" pointList="-516,-388,-412,-388,-412,-316" valLabRot="0" y="-388" labelx="-16" endpinid="Node-2-1" valLabelx="0" hflip="1"/>
+ 
+Connector-23: 
+<item startpinid="Node-2-2" enodeid="Circ_eNode-11" objectName="Connector-23" vflip="1" itemtype="Connector" id="Connector-23" labelrot="0" valLabely="0" x="-412" labely="-24" Show_id="false" rotation="0" pointList="-412,-316,-404,-316" valLabRot="0" y="-316" labelx="-16" endpinid="Fixed Volt.-8-outnod" valLabelx="0" hflip="1"/>
+ 
+Connector-24: 
+<item startpinid="Toggle Switch-3-rpin0" enodeid="Circ_eNode-13" objectName="Connector-24" vflip="1" itemtype="Connector" id="Connector-24" labelrot="0" valLabely="0" x="-516" labely="-24" Show_id="false" rotation="0" pointList="-516,-380,-500,-380,-500,-292" valLabRot="0" y="-380" labelx="-16" endpinid="Node-1-1" valLabelx="0" hflip="1"/>
+ 
+Connector-25: 
+<item startpinid="Node-1-2" enodeid="Circ_eNode-13" objectName="Connector-25" vflip="1" itemtype="Connector" id="Connector-25" labelrot="0" valLabely="0" x="-500" labely="-24" Show_id="false" rotation="0" pointList="-500,-292,-516,-292,-516,-284" valLabRot="0" y="-292" labelx="-16" endpinid="Ground (0 V)-7-Gnd" valLabelx="0" hflip="1"/>
+ 
+</circuit>
